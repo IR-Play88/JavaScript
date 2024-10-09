@@ -1,0 +1,25 @@
+function pedirNumero() {
+    numero = prompt("Introduce un número.");
+    while (isNaN(numero) || numero.trim() === "") {
+        alert("Por favor, introduzca un número válido.");
+        numero = prompt("Introduce un número.");
+    }
+    numero = Number(numero);
+    return numero;
+}
+function dibujarArbol(numeroFilas) {
+    document.write("<style>div {display: flex; justify-content: center; margin-top: 2em;} table {border: 2px solid black; margin: auto;} td{text-align: center; font-size: 3em; color: #297c2a; padding: 0.12em;}</style>")
+    document.write("<div><table>");
+    for (var fila = 0; fila < numeroFilas; fila++) {
+        var asteriscos = "";
+        for (var j = 0; j < fila * 2 + 1; j++, asteriscos += "*");     
+        
+        document.write("<tr><td>"+ asteriscos +"</td></tr><br>");
+    }
+    document.write("</table></div>");
+}
+var numeroFilas = pedirNumero();
+dibujarArbol(numeroFilas);
+
+
+

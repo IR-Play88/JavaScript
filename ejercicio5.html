@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var primerNumero = Number(prompt("Ingrese el primer numero"));
+        var segundoNumero = Number(prompt("Ingrese el segundo numero"));
+        var metodo = prompt("Que operacion quiere calcular +,-,*,/ o R");
+
+        var suma = primerNumero + segundoNumero;
+        var resta = primerNumero - segundoNumero;
+        var multi = primerNumero * segundoNumero;
+        var divi = primerNumero / segundoNumero;
+        var raiz1 = Math.sqrt(primerNumero);
+        var raiz2 = Math.sqrt(segundoNumero);
+        switch (metodo.toLocaleUpperCase()) {
+            case "+":
+                alert("El resultado es " + suma);
+                break;
+            case "-":
+                alert("El resultado es " + resta);
+                break;
+            case "*":
+                alert("El resultado es " + multi);
+                break;
+            case "/":
+                alert("El resultado es " + divi);
+                break;
+            case "R":
+                alert("El resultado del " + primerNumero + " es " + raiz1);
+                alert("El resultado del " + segundoNumero + " es " + raiz2);
+                break;
+
+            default:
+                alert("Todabia no implementado");
+                break;
+        }
+    </script>
+</body>
+
+</html>

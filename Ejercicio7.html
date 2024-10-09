@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        var rama = prompt("Ingrese el numero de ramas");
+
+        for (let i = 1; i <= rama; i++) {
+
+            document.write("&nbsp;".repeat(rama - i));
+
+            for (let j = 0; j < i; j++) {
+                document.write("*");
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+
+</html>

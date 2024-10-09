@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Ejercicio1</title>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        var numero = prompt("Ingrese un numero"); //5
+        var fact = 1;
+
+        //Iterativo
+        //for (var i = numero; i > 1; fact = fact * i--);  
+
+        //Recursivo
+        function factorial(i){
+                if (i<2) return 1;
+                else return (i * factorial(i-1));
+            }
+
+            fact = factorial(numero);
+
+            alert("El factorial de " + numero + " es: " + fact)
+    </script>
+
+</body>
+
+</html>
